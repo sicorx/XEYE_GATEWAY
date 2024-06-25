@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="resource/lib/bacnet4J.jar"/>
+	<classpathentry kind="lib" path="resource/lib/commons-beanutils-1.9.2.jar"/>
+	<classpathentry kind="lib" path="resource/lib/commons-codec-1.8.jar"/>
+	<classpathentry kind="lib" path="resource/lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="resource/lib/commons-dbcp.jar"/>
+	<classpathentry kind="lib" path="resource/lib/commons-lang.jar"/>
+	<classpathentry kind="lib" path="resource/lib/commons-lang3-3.5.jar"/>
+	<classpathentry kind="lib" path="resource/lib/commons-logging.jar"/>
+	<classpathentry kind="lib" path="resource/lib/commons-pool.jar"/>
+	<classpathentry kind="lib" path="resource/lib/ezmorph-1.0.6.jar"/>
+	<classpathentry kind="lib" path="resource/lib/jamod-1.2-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="resource/lib/jdom.jar"/>
+	<classpathentry kind="lib" path="resource/lib/jms-api-1.1-rev-1.jar"/>
+	<classpathentry kind="lib" path="resource/lib/json-lib.jar"/>
+	<classpathentry kind="lib" path="resource/lib/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="resource/lib/pi4j-core.jar"/>
+	<classpathentry kind="lib" path="resource/lib/quartz-2.2.3.jar"/>
+	<classpathentry kind="lib" path="resource/lib/RXTXcomm.jar"/>
+	<classpathentry kind="lib" path="resource/lib/seroUtils.jar"/>
+	<classpathentry kind="lib" path="resource/lib/slf4j-api-1.7.7.jar"/>
+	<classpathentry kind="lib" path="resource/lib/snmp4j-2.4.1.jar"/>
+	<classpathentry kind="lib" path="resource/lib/snmp4j-agent-2.4.1.jar"/>
+	<classpathentry kind="lib" path="resource/lib/bluecove-2.1.0.jar"/>
+	<classpathentry kind="lib" path="resource/lib/bluecove-gpl-2.1.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

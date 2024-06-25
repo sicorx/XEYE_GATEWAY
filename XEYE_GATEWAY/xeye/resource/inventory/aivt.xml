@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<item>
+	
+	<description><![CDATA[ Serial 장비 ]]></description>
+	<read_interval>5</read_interval> <!-- read time(seconds) -->
+	<com_type>3</com_type> <!-- 1:SERIAL(GPIO), 2:TCP, 3:SERIAL -->
+	<serial port_name="/dev/ttyS0" 
+			baudrate="115200" 
+			databits="8" 
+			parity="none"
+			stopbits="1"/>
+	<!-- TCP -->
+	<host ip="" port="" />
+	
+	<device protocol="2" type="0" oid="1" unit_id="1" channel="" baud_rate="" use_yn="N">
+		<name><![CDATA[ PMC ]]></name>
+		<object><![CDATA[ vidcom.PMS8CH ]]></object>
+		<tags>
+			<tag oid="0" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 통신불량 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="1" address="40001" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH1(R 누적유효전력량) ]]></name>
+				<unit><![CDATA[ Wh ]]></unit>
+			</tag>
+			<tag oid="2" address="40003" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH2(R 누적유효전력량) ]]></name>
+				<unit><![CDATA[ Wh ]]></unit>
+			</tag>
+			<tag oid="3" address="40005" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH3(R 누적유효전력량) ]]></name>
+				<unit><![CDATA[ Wh ]]></unit>
+			</tag>
+			<tag oid="4" address="40007" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH4(R 누적유효전력량) ]]></name>
+				<unit><![CDATA[ Wh ]]></unit>
+			</tag>
+			<tag oid="5" address="40009" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH5(R 누적유효전력량) ]]></name>
+				<unit><![CDATA[ Wh ]]></unit>
+			</tag>
+			<tag oid="6" address="40011" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH6(R 누적유효전력량) ]]></name>
+				<unit><![CDATA[ Wh ]]></unit>
+			</tag>
+			<tag oid="7" address="40013" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH7(R 누적유효전력량) ]]></name>
+				<unit><![CDATA[ Wh ]]></unit>
+			</tag>
+			<tag oid="8" address="40015" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH8(R 누적유효전력량) ]]></name>
+				<unit><![CDATA[ Wh ]]></unit>
+			</tag>
+			<tag oid="9" address="40017" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH1(S 누적유효전력량) ]]></name>
+				<unit><![CDATA[ Wh ]]></unit>
+			</tag>
+			<tag oid="10" address="40019" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH2(S 누적유효전력량) ]]></name>
+				<unit><![CDATA[ Wh ]]></unit>
+			</tag>
+			<tag oid="11" address="40021" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH3(S 누적유효전력량) ]]></name>
+				<unit><![CDATA[ Wh ]]></unit>
+			</tag>
+			<tag oid="12" address="40023" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH4(S 누적유효전력량) ]]></name>
+				<unit><![CDATA[ Wh ]]></unit>
+			</tag>
+			<tag oid="13" address="40025" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH5(S 누적유효전력량) ]]></name>
+				<unit><![CDATA[ Wh ]]></unit>
+			</tag>
+			<tag oid="14" address="40027" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH6(S 누적유효전력량) ]]></name>
+				<unit><![CDATA[ Wh ]]></unit>
+			</tag>
+			<tag oid="15" address="40029" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH7(S 누적유효전력량) ]]></name>
+				<unit><![CDATA[ Wh ]]></unit>
+			</tag>
+			<tag oid="16" address="40031" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH8(S 누적유효전력량) ]]></name>
+				<unit><![CDATA[ Wh ]]></unit>
+			</tag>
+			<tag oid="17" address="40033" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH1(T 누적 유효전력량) ]]></name>
+				<unit><![CDATA[ Wh ]]></unit>
+			</tag>
+			<tag oid="18" address="40035" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH2(T 누적 유효전력량) ]]></name>
+				<unit><![CDATA[ Wh ]]></unit>
+			</tag>
+			<tag oid="19" address="40037" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH3(T 누적 유효전력량) ]]></name>
+				<unit><![CDATA[ Wh ]]></unit>
+			</tag>
+			<tag oid="20" address="40039" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH4(T 누적 유효전력량) ]]></name>
+				<unit><![CDATA[ Wh ]]></unit>
+			</tag>
+			<tag oid="21" address="40041" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH5(T 누적 유효전력량) ]]></name>
+				<unit><![CDATA[ Wh ]]></unit>
+			</tag>
+			<tag oid="22" address="40043" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH6(T 누적 유효전력량) ]]></name>
+				<unit><![CDATA[ Wh ]]></unit>
+			</tag>
+			<tag oid="23" address="40045" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH7(T 누적 유효전력량) ]]></name>
+				<unit><![CDATA[ Wh ]]></unit>
+			</tag>
+			<tag oid="24" address="40047" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH8(T 누적 유효전력량) ]]></name>
+				<unit><![CDATA[ Wh ]]></unit>
+			</tag>
+			<tag oid="25" address="40049" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH1(R 전력) ]]></name>
+				<unit><![CDATA[ W ]]></unit>
+			</tag>
+			<tag oid="26" address="40051" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH2(R 전력) ]]></name>
+				<unit><![CDATA[ W ]]></unit>
+			</tag>
+			<tag oid="27" address="40053" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH3(R 전력) ]]></name>
+				<unit><![CDATA[ W ]]></unit>
+			</tag>
+			<tag oid="28" address="40055" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH4(R 전력) ]]></name>
+				<unit><![CDATA[ W ]]></unit>
+			</tag>
+			<tag oid="29" address="40057" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH5(R 전력) ]]></name>
+				<unit><![CDATA[ W ]]></unit>
+			</tag>
+			<tag oid="30" address="40059" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH6(R 전력) ]]></name>
+				<unit><![CDATA[ W ]]></unit>
+			</tag>
+			<tag oid="31" address="40061" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH7(R 전력) ]]></name>
+				<unit><![CDATA[ W ]]></unit>
+			</tag>
+			<tag oid="32" address="40063" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH8(R 전력) ]]></name>
+				<unit><![CDATA[ W ]]></unit>
+			</tag>
+			<tag oid="33" address="40065" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH1(S 전력) ]]></name>
+				<unit><![CDATA[ W ]]></unit>
+			</tag>
+			<tag oid="34" address="40067" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH2(S 전력) ]]></name>
+				<unit><![CDATA[ W ]]></unit>
+			</tag>
+			<tag oid="35" address="40069" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH3(S 전력) ]]></name>
+				<unit><![CDATA[ W ]]></unit>
+			</tag>
+			<tag oid="36" address="40071" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH4(S 전력) ]]></name>
+				<unit><![CDATA[ W ]]></unit>
+			</tag>
+			<tag oid="37" address="40073" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH5(S 전력) ]]></name>
+				<unit><![CDATA[ W ]]></unit>
+			</tag>
+			<tag oid="38" address="40075" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH6(S 전력) ]]></name>
+				<unit><![CDATA[ W ]]></unit>
+			</tag>
+			<tag oid="39" address="40077" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH7(S 전력) ]]></name>
+				<unit><![CDATA[ W ]]></unit>
+			</tag>
+			<tag oid="40" address="40079" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH8(S 전력) ]]></name>
+				<unit><![CDATA[ W ]]></unit>
+			</tag>
+			<tag oid="41" address="40081" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH1(T 전력) ]]></name>
+				<unit><![CDATA[ W ]]></unit>
+			</tag>
+			<tag oid="42" address="40083" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH2(T 전력) ]]></name>
+				<unit><![CDATA[ W ]]></unit>
+			</tag>
+			<tag oid="43" address="40085" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH3(T 전력) ]]></name>
+				<unit><![CDATA[ W ]]></unit>
+			</tag>
+			<tag oid="44" address="40087" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH4(T 전력) ]]></name>
+				<unit><![CDATA[ W ]]></unit>
+			</tag>
+			<tag oid="45" address="40089" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH5(T 전력) ]]></name>
+				<unit><![CDATA[ W ]]></unit>
+			</tag>
+			<tag oid="46" address="40091" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH6(T 전력) ]]></name>
+				<unit><![CDATA[ W ]]></unit>
+			</tag>
+			<tag oid="47" address="40093" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH7(T 전력) ]]></name>
+				<unit><![CDATA[ W ]]></unit>
+			</tag>
+			<tag oid="48" address="40095" data_type="UINT32" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ CH8(T 전력) ]]></name>
+				<unit><![CDATA[ W ]]></unit>
+			</tag>
+			<tag oid="49" address="40097" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH1(R Current) ]]></name>
+				<unit><![CDATA[ A ]]></unit>
+			</tag>
+			<tag oid="50" address="40098" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH2(R Current) ]]></name>
+				<unit><![CDATA[ A ]]></unit>
+			</tag>
+			<tag oid="51" address="40099" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH3(R Current) ]]></name>
+				<unit><![CDATA[ A ]]></unit>
+			</tag>
+			<tag oid="52" address="40100" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH4(R Current) ]]></name>
+				<unit><![CDATA[ A ]]></unit>
+			</tag>
+			<tag oid="53" address="40101" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH5(R Current) ]]></name>
+				<unit><![CDATA[ A ]]></unit>
+			</tag>
+			<tag oid="54" address="40102" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH6(R Current) ]]></name>
+				<unit><![CDATA[ A ]]></unit>
+			</tag>
+			<tag oid="55" address="40103" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH7(R Current) ]]></name>
+				<unit><![CDATA[ A ]]></unit>
+			</tag>
+			<tag oid="56" address="40104" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH8(R Current) ]]></name>
+				<unit><![CDATA[ A ]]></unit>
+			</tag>
+			<tag oid="57" address="40105" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH1(S Current) ]]></name>
+				<unit><![CDATA[ A ]]></unit>
+			</tag>
+			<tag oid="58" address="40106" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH2(S Current) ]]></name>
+				<unit><![CDATA[ A ]]></unit>
+			</tag>
+			<tag oid="59" address="40107" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH3(S Current) ]]></name>
+				<unit><![CDATA[ A ]]></unit>
+			</tag>
+			<tag oid="60" address="40108" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH4(S Current) ]]></name>
+				<unit><![CDATA[ A ]]></unit>
+			</tag>
+			<tag oid="61" address="40109" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH5(S Current) ]]></name>
+				<unit><![CDATA[ A ]]></unit>
+			</tag>
+			<tag oid="62" address="40110" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH6(S Current) ]]></name>
+				<unit><![CDATA[ A ]]></unit>
+			</tag>
+			<tag oid="63" address="40111" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH7(S Current) ]]></name>
+				<unit><![CDATA[ A ]]></unit>
+			</tag>
+			<tag oid="64" address="40112" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH8(S Current) ]]></name>
+				<unit><![CDATA[ A ]]></unit>
+			</tag>
+			<tag oid="65" address="40113" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH1(T Current) ]]></name>
+				<unit><![CDATA[ A ]]></unit>
+			</tag>
+			<tag oid="66" address="40114" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH2(T Current) ]]></name>
+				<unit><![CDATA[ A ]]></unit>
+			</tag>
+			<tag oid="67" address="40115" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH3(T Current) ]]></name>
+				<unit><![CDATA[ A ]]></unit>
+			</tag>
+			<tag oid="68" address="40116" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH4(T Current) ]]></name>
+				<unit><![CDATA[ A ]]></unit>
+			</tag>
+			<tag oid="69" address="40117" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH5(T Current) ]]></name>
+				<unit><![CDATA[ A ]]></unit>
+			</tag>
+			<tag oid="70" address="40118" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH6(T Current) ]]></name>
+				<unit><![CDATA[ A ]]></unit>
+			</tag>
+			<tag oid="71" address="40119" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH7(T Current) ]]></name>
+				<unit><![CDATA[ A ]]></unit>
+			</tag>
+			<tag oid="72" address="40120" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH8(T Current) ]]></name>
+				<unit><![CDATA[ A ]]></unit>
+			</tag>
+			<tag oid="73" address="40121" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH1(R PF) ]]></name>
+				<unit><![CDATA[ % ]]></unit>
+			</tag>
+			<tag oid="74" address="40122" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH2(R PF) ]]></name>
+				<unit><![CDATA[ % ]]></unit>
+			</tag>
+			<tag oid="75" address="40123" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH3(R PF) ]]></name>
+				<unit><![CDATA[ % ]]></unit>
+			</tag>
+			<tag oid="76" address="40124" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH4(R PF) ]]></name>
+				<unit><![CDATA[ % ]]></unit>
+			</tag>
+			<tag oid="77" address="40125" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH5(R PF) ]]></name>
+				<unit><![CDATA[ % ]]></unit>
+			</tag>
+			<tag oid="78" address="40126" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH6(R PF) ]]></name>
+				<unit><![CDATA[ % ]]></unit>
+			</tag>
+			<tag oid="79" address="40127" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH7(R PF) ]]></name>
+				<unit><![CDATA[ % ]]></unit>
+			</tag>
+			<tag oid="80" address="40128" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH8(R PF) ]]></name>
+				<unit><![CDATA[ % ]]></unit>
+			</tag>
+			<tag oid="81" address="40129" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH1(S PF) ]]></name>
+				<unit><![CDATA[ % ]]></unit>
+			</tag>
+			<tag oid="82" address="40130" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH2(S PF) ]]></name>
+				<unit><![CDATA[ % ]]></unit>
+			</tag>
+			<tag oid="83" address="40131" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH3(S PF) ]]></name>
+				<unit><![CDATA[ % ]]></unit>
+			</tag>
+			<tag oid="84" address="40132" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH4(S PF) ]]></name>
+				<unit><![CDATA[ % ]]></unit>
+			</tag>
+			<tag oid="85" address="40133" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH5(S PF) ]]></name>
+				<unit><![CDATA[ % ]]></unit>
+			</tag>
+			<tag oid="86" address="40134" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH6(S PF) ]]></name>
+				<unit><![CDATA[ % ]]></unit>
+			</tag>
+			<tag oid="87" address="40135" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH7(S PF) ]]></name>
+				<unit><![CDATA[ % ]]></unit>
+			</tag>
+			<tag oid="88" address="40136" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH8(S PF) ]]></name>
+				<unit><![CDATA[ % ]]></unit>
+			</tag>
+			<tag oid="89" address="40137" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH1(T PF) ]]></name>
+				<unit><![CDATA[ % ]]></unit>
+			</tag>
+			<tag oid="90" address="40138" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH2(T PF) ]]></name>
+				<unit><![CDATA[ % ]]></unit>
+			</tag>
+			<tag oid="91" address="40139" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH3(T PF) ]]></name>
+				<unit><![CDATA[ % ]]></unit>
+			</tag>
+			<tag oid="92" address="40140" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH4(T PF) ]]></name>
+				<unit><![CDATA[ % ]]></unit>
+			</tag>
+			<tag oid="93" address="40141" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH5(T PF) ]]></name>
+				<unit><![CDATA[ % ]]></unit>
+			</tag>
+			<tag oid="94" address="40142" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH6(T PF) ]]></name>
+				<unit><![CDATA[ % ]]></unit>
+			</tag>
+			<tag oid="95" address="40143" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH7(T PF) ]]></name>
+				<unit><![CDATA[ % ]]></unit>
+			</tag>
+			<tag oid="96" address="40144" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ CH8(T PF) ]]></name>
+				<unit><![CDATA[ % ]]></unit>
+			</tag>
+			<tag oid="97" address="40145" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ R Volt ]]></name>
+				<unit><![CDATA[ V ]]></unit>
+			</tag>
+			<tag oid="98" address="40146" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ S Volt ]]></name>
+				<unit><![CDATA[ V ]]></unit>
+			</tag>
+			<tag oid="99" address="40147" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ T Volt ]]></name>
+				<unit><![CDATA[ V ]]></unit>
+			</tag>
+			<tag oid="100" address="40148" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ R Frequency ]]></name>
+				<unit><![CDATA[ Hz ]]></unit>
+			</tag>
+			<tag oid="101" address="40149" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ S Frequency ]]></name>
+				<unit><![CDATA[ Hz ]]></unit>
+			</tag>
+			<tag oid="102" address="40150" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ T Frequency ]]></name>
+				<unit><![CDATA[ Hz ]]></unit>
+			</tag>
+			<tag oid="103" address="40151" data_type="UINT16" access="W" rate="" monitor_yn="Y">
+				<name><![CDATA[ Digital Output ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="" address="40152" data_type="UINT16" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ Digital output status ]]></name>
+				<unit><![CDATA[ ]]></unit>
+				<bit_tags>
+					<bit_tag oid="104" type="D" access="R" monitor_yn="Y">
+						<name><![CDATA[ 간판1 상태 ]]></name>
+						<unit><![CDATA[ ]]></unit>
+					</bit_tag>
+					<bit_tag oid="105" type="D" access="R" monitor_yn="Y">
+						<name><![CDATA[ 간판2 상태 ]]></name>
+						<unit><![CDATA[ ]]></unit>
+					</bit_tag>
+				</bit_tags>
+			</tag>
+			<tag oid="" address="40153" data_type="UINT16" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ Digital Input ]]></name>
+				<unit><![CDATA[ ]]></unit>
+				<bit_tags>
+					<bit_tag oid="106" type="D" access="R" monitor_yn="Y">
+						<name><![CDATA[ 알몬1 상태 ]]></name>
+						<unit><![CDATA[ ]]></unit>
+					</bit_tag>
+					<bit_tag oid="107" type="D" access="R" monitor_yn="Y">
+						<name><![CDATA[ 알몬2 상태 ]]></name>
+						<unit><![CDATA[ ]]></unit>
+					</bit_tag>
+				</bit_tags>
+			</tag>
+		</tags>
+	</device>
+	
+	<device protocol="2" type="0" oid="2" unit_id="1" channel="" baud_rate="" use_yn="N">
+		<name><![CDATA[ 테몬 ]]></name>
+		<object><![CDATA[ xeye.Modbus ]]></object>
+		<tags>
+			<tag oid="0" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 통신불량 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="1" address="40154" data_type="INT16" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 온도1 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="2" address="40155" data_type="INT16" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 온도2 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="3" address="40156" data_type="INT16" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 온도3 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="4" address="40157" data_type="INT16" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 온도4 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="5" address="40158" data_type="INT16" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 온도5 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="6" address="40159" data_type="INT16" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 온도6 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="7" address="40160" data_type="INT16" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 온도7 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="8" address="40161" data_type="INT16" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 온도8 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="9" address="40162" data_type="INT16" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 온도9 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="10" address="40163" data_type="INT16" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 온도10 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="11" address="40164" data_type="INT16" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 온도11 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="12" address="40165" data_type="INT16" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 온도12 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="13" address="40166" data_type="INT16" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 온도13 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="14" address="40167" data_type="INT16" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 온도14 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="15" address="40168" data_type="INT16" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 온도15 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="16" address="40169" data_type="INT16" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 온도16 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+		</tags>
+	</device>
+	
+	<device protocol="2" type="0" oid="3" unit_id="1" channel="" baud_rate="" use_yn="N">
+		<name><![CDATA[ 유선온습도계 ]]></name>
+		<object><![CDATA[ xeye.Modbus ]]></object>
+		<tags>
+			<tag oid="0" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 통신불량 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="1" address="40170" data_type="INT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ 온도 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="2" address="40171" data_type="UINT16" access="R" rate="x/100" monitor_yn="Y">
+				<name><![CDATA[ 습도 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+		</tags>
+	</device>
+	
+</item>

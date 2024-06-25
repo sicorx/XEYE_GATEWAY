@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<item>
+	
+	<device protocol="1" type="0" oid="" unit_id="" channel="" baud_rate="" use_yn="">
+		<name><![CDATA[ 인버터 허브 ]]></name>
+		<object><![CDATA[ carrier.InverterHub ]]></object>
+		<tags>
+			<tag oid="0" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 통신불량 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="1" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ F/W 버전 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="2" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 타입 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="3" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 모델 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="4" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 정격 용량 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="5" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 에러코드 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="6" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 운전 모드 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="7" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 실내 온도 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="8" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 실내 설정 온도 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="9" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 실외기 온도 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="10" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 고온 경보 사용 유무 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="11" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 고온 경보 설정 온도 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="12" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 저온 경보 사용 유무 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="13" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 저온 경보 설정 온도 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="14" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 실내 제상 온도 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="15" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 제상/제수 동작 기준 선택 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="16" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 제상 복귀 온도 설정 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="17" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 제상 간격 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="18" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 제상 시간 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="19" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 제수 시간 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="20" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 알람 MASK1-실내 고온 알람 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="21" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 알람 MASK1-실내 저온 알람 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="22" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 알람 MASK1-실내 온도 센서(TRA) ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="23" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 알람 MASK1-실내 제상 온도 센서(TDF) ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="24" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 알람 MASK1-고압 알람 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="25" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 알람 MASK1-저압 알람 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="26" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 알람 MASK1-압축기 알람 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="27" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 알람 MASK1-Link 알람 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="28" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 알람-실내 고온 알람 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="29" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 알람-실내 저온 알람 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="30" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 알람-실내 온도 센서(TRA) ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="31" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 알람-실내 제상 온도 센서(TDF) ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="32" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 알람-고압 알람 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="33" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 알람-저압 알람 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="34" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 알람-압축기 알람 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="35" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 알람-Link 알람 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="36" address="" data_type="" access="W" rate="" monitor_yn="Y">
+				<name><![CDATA[ 운전 모드 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="37" address="" data_type="" access="W" rate="" monitor_yn="Y">
+				<name><![CDATA[ 실내 설정 온도 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="38" address="" data_type="" access="W" rate="" monitor_yn="Y">
+				<name><![CDATA[ 고온 경보 사용 유무 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="39" address="" data_type="" access="W" rate="" monitor_yn="Y">
+				<name><![CDATA[ 고온 경보 설정 온도 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="40" address="" data_type="" access="W" rate="" monitor_yn="Y">
+				<name><![CDATA[ 저온 경보 사용 유무 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="41" address="" data_type="" access="W" rate="" monitor_yn="Y">
+				<name><![CDATA[ 저온 경보 설정 온도 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="42" address="" data_type="" access="W" rate="" monitor_yn="Y">
+				<name><![CDATA[ 제상 복귀 온도 설정 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="43" address="" data_type="" access="W" rate="" monitor_yn="Y">
+				<name><![CDATA[ 제상 간격 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="44" address="" data_type="" access="W" rate="" monitor_yn="Y">
+				<name><![CDATA[ 제상 시간 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="45" address="" data_type="" access="W" rate="" monitor_yn="Y">
+				<name><![CDATA[ 제수 시간 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+		</tags>
+	</device>
+	
+</item>

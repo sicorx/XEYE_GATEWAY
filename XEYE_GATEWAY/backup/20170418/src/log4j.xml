@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+	<appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yy-MM-dd HH:mm:ss,SSS} %-5p %m%n" />
+		</layout>
+	</appender>
+    
+	<appender name="COMMON" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="./logs/log4j.log"/>
+		<param name="MaxFileSize" value="10MB"/>
+		<param name="MaxBackupIndex" value="20"/>
+		<param name="ImmediateFlush" value="true"/>
+		<param name="Append" value="true"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yy-MM-dd HH:mm:ss,SSS} %C{1} %-5p %m%n" />
+		</layout> 
+	</appender>
+	
+	<appender name="MANAGER" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="./logs/manager.log"/>
+		<param name="MaxFileSize" value="10MB"/>
+		<param name="MaxBackupIndex" value="2"/>
+		<param name="ImmediateFlush" value="true"/>
+		<param name="Append" value="true"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yy-MM-dd HH:mm:ss,SSS} %C{1} %-5p %m%n" />
+		</layout> 
+	</appender>
+	
+	<appender name="IFCLIENT" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="./logs/socket.log"/>
+		<param name="MaxFileSize" value="10MB"/>
+		<param name="MaxBackupIndex" value="5"/>
+		<param name="ImmediateFlush" value="true"/>
+		<param name="Append" value="true"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yy-MM-dd HH:mm:ss,SSS} %C{1} %-5p %m%n" />
+		</layout> 
+	</appender>
+	
+	<appender name="SCHEDULER" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="./logs/schedule.log"/>
+		<param name="MaxFileSize" value="10MB"/>
+		<param name="MaxBackupIndex" value="5"/>
+		<param name="ImmediateFlush" value="true"/>
+		<param name="Append" value="true"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yy-MM-dd HH:mm:ss,SSS} %C{1} %-5p %m%n" />
+		</layout> 
+	</appender>
+	
+	<appender name="SNMP4JAGENT" class="org.apache.log4j.RollingFileAppender"> 
+		<param name="File" value="./logs/snmp4j.log"/>
+		<param name="MaxFileSize" value="10MB"/>
+		<param name="MaxBackupIndex" value="2"/>
+		<param name="ImmediateFlush" value="true"/>
+		<param name="Append" value="true"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yy-MM-dd HH:mm:ss,SSS} [%t] %c (%F:%L) %-5p %m%n" />
+		</layout> 
+	</appender>
+	
+	<logger name="org.apache" additivity="false">
+        <level value="WARN"/>
+    </logger>
+
+	<logger name="com.hoonit" additivity="false">
+		<level value="INFO"/> 
+		<appender-ref ref="COMMON"/>
+		<appender-ref ref="CONSOLE"/>
+	</logger>
+	
+	<logger name="com.hoonit.xeye.manager" additivity="false">
+		<level value="DEBUG"/> 
+		<appender-ref ref="MANAGER"/>
+		<appender-ref ref="CONSOLE"/>
+	</logger>
+	
+	<logger name="com.hoonit.xeye.net.socket" additivity="false">
+		<level value="INFO"/> 
+		<appender-ref ref="IFCLIENT"/>
+		<appender-ref ref="CONSOLE"/>
+	</logger>
+	
+	<logger name="com.hoonit.xeye.scheduler" additivity="false">
+		<level value="INFO"/> 
+		<appender-ref ref="SCHEDULER"/>
+		<appender-ref ref="CONSOLE"/>
+	</logger>
+	
+	<logger name="org.snmp4j" additivity="false">
+		<level value="ERROR"/> 
+		<appender-ref ref="SNMP4JAGENT"/>
+		<appender-ref ref="CONSOLE"/>
+	</logger>
+	
+	<root>
+		<priority value="INFO"/>
+	</root>
+</log4j:configuration>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<item>
+	
+	<device protocol="2" type="0" oid="" unit_id="1" channel="" baud_rate="" use_yn="">
+		<name><![CDATA[ 알몬 ]]></name>
+		<object><![CDATA[ vidcom.PMS8CH ]]></object>
+		<tags>
+			<tag oid="0" address="" data_type="" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 통신불량 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+			</tag>
+			<tag oid="" address="40153" data_type="UINT16" access="R" rate="" monitor_yn="Y">
+				<name><![CDATA[ 알몬 상태 ]]></name>
+				<unit><![CDATA[ ]]></unit>
+				<bit_tags />
+			</tag>
+		</tags>
+	</device>
+	
+</item>
